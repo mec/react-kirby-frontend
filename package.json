@@ -1,0 +1,41 @@
+{
+  "name": "mr-react-starter",
+  "version": "1.0.0",
+  "description": "Super simple React starter",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "webpack-dev-server",
+    "build": "webpack -p"
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "react"
+    ]
+  },
+  "author": "Mec Rawlings <mec.rawlings@gmail.com>",
+  "dependencies": {
+    "axios": "^0.16.1",
+    "markdown-it": "^8.3.1",
+    "marked": "^0.3.6",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-proptypes": "^1.0.0",
+    "react-router": "^2.0.0",
+    "react-router-dom": "^4.1.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-preset-env": "^1.4.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.1",
+    "file-loader": "^0.11.1",
+    "html-webpack-plugin": "^2.28.0",
+    "jest": "^20.0.1",
+    "style-loader": "^0.17.0",
+    "webpack": "^2.5.1",
+    "webpack-dev-server": "^2.4.5"
+  }
+}
