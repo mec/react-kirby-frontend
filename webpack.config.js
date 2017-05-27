@@ -24,7 +24,7 @@ module.exports = {
 				test: /\.svg$/,
 				loader: 'file-loader',
 				options: {
-					name: 'image/[name].svg'
+					name: 'images/[name].svg'
 				}
 			}
 		]

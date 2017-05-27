@@ -11,15 +11,16 @@ class LatestProjects extends React.Component {
     super (props);
     this.state = {
       projects: null,
+      number: 3
     };
   }
 
   componentDidMount() {
-    api.getChildren('projects')
+    api.getPage('projects')
       .then( function(res) {
           this.setState ( function() {
             return {
-              projects: res.slice(0,3)
+              projects: res.children.slice(0, 3)
             }
           })
       }.bind(this))
@@ -32,7 +33,7 @@ class LatestProjects extends React.Component {
 		      <div className="wrap wide">
 		        <h2>Latest Projects</h2>
 		        	{!this.state.projects 
-								? <h1>Loading Projects</h1> 
+								? <img src={require('../images/loading.svg')} className="loader"/>
 								: <Showcase projects={this.state.projects}/> 
 							}
 		        <p className="projects-section-more"><NavLink to='/projects' className="btn">show all projects &hellip;</NavLink></p>

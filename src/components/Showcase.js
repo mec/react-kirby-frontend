@@ -1,6 +1,8 @@
-var React = require('React')
+let React = require('React')
 
-var Images = require('./Images')
+let NavLink = require('react-router-dom').NavLink;
+
+let Image = require('./Image')
 
 function Showcase(props) {
 		return (
@@ -8,14 +10,14 @@ function Showcase(props) {
 				{props.projects.map(function(project) {
 					return (
 						<li className="showcase-item column" key={project.hash}>
-			        <a href={'/' + project.uri} className="showcase-link">
-		           	<Images projectUri={project.uri}/>
-		          	<div className="showcase-caption">
-		            	<h3 className="showcase-title">{project.content.title}</h3>
-		          	</div>
-			        </a>
-				  	</li>
-			    )
+					        <NavLink to={'/' + project.uri} className="showcase-link">
+					           	<Image image={project.images.thumbnails[0]}/>
+					          	<div className="showcase-caption">
+					            	<h3 className="showcase-title">{project.content.title}</h3>
+					          	</div>
+					        </NavLink>
+					  	</li>
+				    )
 				})}
 			</ul>
 		)

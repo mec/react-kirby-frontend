@@ -952,3 +952,9 @@ body {
     width: 33.33%;
   }
 }
+
+img.loader {
+  width: 3rem;
+  heigtht: auto;
+  margin: auto;
+}
