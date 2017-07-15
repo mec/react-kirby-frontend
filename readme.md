@@ -1,5 +1,5 @@
 # Kirby React
-I recently wrote about using Kirby as a 'headless' CMS for a React frontend.
+I recently wrote about using [Kirby](https://getkirby.com) as a 'headless' CMS for a React frontend.
 
 This is that frontend. The goal was to reproduce the Kirby Starterkit theme in React.
 
@@ -7,6 +7,7 @@ This is that frontend. The goal was to reproduce the Kirby Starterkit theme in R
 
 - on the fly routes based on exposing the content in Kirby
 - JS way to parse Kirbytext
+- fancy transitions between content, that's why we're here!
 
 ## Install and run
 You'll need a few thing to get this working:
