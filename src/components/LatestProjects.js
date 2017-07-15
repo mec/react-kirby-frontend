@@ -1,5 +1,5 @@
-var React = require('React')
-var NavLink = require('react-router-dom').NavLink;
+var React = require('react')
+var NavLink = require('React-router-dom').NavLink;
 
 var api = require('../utilities/api')
 

@@ -1,6 +1,6 @@
-let React = require('React')
+let React = require('react')
 
-let NavLink = require('react-router-dom').NavLink;
+let NavLink = require('React-router-dom').NavLink;
 
 let Image = require('./Image')
 

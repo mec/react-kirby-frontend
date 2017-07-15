@@ -1,5 +1,5 @@
-var React = require('React')
-var ReactDOM = require('React-dom')
+var React = require('react')
+var ReactDOM = require('react-dom')
 
 var App = require('./containers/App')
 

@@ -1,4 +1,4 @@
-var React = require('React')
+var React = require('react')
 
 var Title = require('../components/Title')
 var Menu = require('../components/Menu')
@@ -7,7 +7,7 @@ function Header(props) {
 	return (
       <header className="header wrap wide" role="banner">
         <div className="grid">
-          <Title title='Kirby Starterkit'/>
+          <Title title='Kirby React Starterkit'/>
           <Menu items={[ 
           	{ 'title' : 'Projects', 'uri' : 'projects' }, 
           	{ 'title' : 'Blog', 'uri' : 'blog'},

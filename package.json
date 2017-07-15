@@ -23,7 +23,8 @@
     "react-dom": "^15.4.2",
     "react-proptypes": "^1.0.0",
     "react-router": "^2.0.0",
-    "react-router-dom": "^4.1.1"
+    "react-router-dom": "^4.1.1",
+    "react-transition-group": "^1.1.3"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
