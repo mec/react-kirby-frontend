@@ -13,9 +13,9 @@ function Page(props) {
           </div>
           <hr />
         </header>
-          
-        <div className="wrap wide">  
-          
+
+        <div className="wrap wide">
+
         </div>
 
       </main>

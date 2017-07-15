@@ -33,16 +33,16 @@ class Blog extends React.Component {
       <main className="main" role="main">
 
         <div className="wrap">
-          
+
           <header>
             <h1>{this.state.page.title}</h1>
             <Intro text={this.state.page.intro}/>
           </header>
-          
+
           <div className="text wrap" dangerouslySetInnerHTML={{__html: this.state.page.text}}></div>
-          
+
         </div>
-        
+
 
       </main>
 

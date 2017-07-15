@@ -7,7 +7,7 @@ var api = require('../utilities/api')
 var Kirbytext = require('../utilities/Kirbytext')
 
 class Project extends React.Component {
- 
+
   constructor(props) {
     super (props);
     this.state = {
@@ -34,7 +34,7 @@ class Project extends React.Component {
   render() {
     return (
       <main className="main" role="main">
-        
+
         <header className="wrap">
           <h1>{this.state.content.title}</h1>
           <div className="intro text">
@@ -42,9 +42,9 @@ class Project extends React.Component {
           </div>
           <hr />
         </header>
-        
+
         <div className="text wrap">
-          
+
           <div dangerouslySetInnerHTML={{__html: this.state.content.text}}></div>
 
           {this.state.images.map(function(image) {

@@ -33,12 +33,6 @@ class Home extends React.Component {
 
   render() {
 		return (
-      <CSSTransitionGroup
-        transitionName="example"
-        transitionAppear={true}
-        transitionAppearTimeout={500}
-        transitionEnter={false}
-        transitionLeave={false}>
         <main className="main" role="main" key="main">
 
           <header className="wrap">
@@ -56,8 +50,6 @@ class Home extends React.Component {
           <LatestProjects key='latestProjects'/>
 
         </main>
-        </CSSTransitionGroup>
-
 		)
   }
 }
